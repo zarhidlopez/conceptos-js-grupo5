@@ -14,3 +14,27 @@ console.table(libros);
 console.log('El libro es: ', libros.nombre);
 //muestra el libro el principito
 console.log('El libro es: ', libros.nombre2);
+//consultar el elemento precio1 del objeto
+const p1 = precio1;
+console.log('El precio 1 es: ', libros[p1]);
+
+//agregar una nueva propiedad al objeto libros
+libros.nuevoLibro = 'Una mujer de cuatro en conducta';
+console.log(libros);
+
+//eliminar una propiedad del objeto libros
+delete libros.nombre;
+console.log(libros);
+
+//combinar un objeto con arreglos
+let autos = {
+    marca1: 'Ferrari',
+    marca2: 'Toyota',
+    marca3: 'Mercedes',
+    paisMarca: ['Italia', 'Japon', 'Alemania'],
+}
+
+//mostrar los paises
+console.log(autos.paisMarca);
+
+
